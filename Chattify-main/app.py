@@ -140,9 +140,6 @@ def history():
                 st.error("Please select a model from the sidebar")
                 
             else:
-                    if any(entry["content"].strip().lower() == user_input.strip().lower() for entry in st.session_state.history if entry["role"] == "user"):
-                        st.warning("This question has already been answered. Please check the chat history.")
-                    else:
                         # Add user's input to history
                         st.session_state.history.append({"role": "user", "content": user_input})
 
@@ -193,8 +190,11 @@ def history():
         #             st.error("An error occurred while processing. Please try again.")
 # Streamlit app
 def main():
+    # Initialize session state variables
     if "logged_in" not in st.session_state:
         st.session_state.logged_in = False
+    if "username" not in st.session_state:
+        st.session_state.username = None
 
     user_database = load_user_database()
 
@@ -230,7 +230,6 @@ def main():
 
         with tab2:
             with st.form("signup_form"):
-  
                 new_username = st.text_input("New Username")
                 new_password = st.text_input("New Password", type="password")
                 signup_button = st.form_submit_button("**Sign Up**")
