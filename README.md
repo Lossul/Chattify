@@ -29,3 +29,7 @@ To run **Chattify**, ensure you have the following installed:
 3. **Git (to clone the repository)**
 
 
+
+
+
+
