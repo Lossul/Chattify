@@ -8,7 +8,7 @@ import json
 import time
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
-from langchain import HuggingFaceHub
+from langchain_community.llms import HuggingFaceHub
 from dotenv import load_dotenv
 import uuid #Universally Unique Identifier
 # Initialize the model
