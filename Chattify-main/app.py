@@ -97,7 +97,7 @@ def history():
 
     col1, col2 = st.sidebar.columns([1, 2.2])
     
-    with open('trash-fill.svg', 'r') as f:
+    with open('Chattify-main/trash-fill.svg', 'r') as f:
         svg_icon = f.read()
     clear_button = col1.button(":red[Clear All]", key="clear_all")
     col2.markdown(svg_icon.replace('<svg', '<svg width="32" height="32"'),unsafe_allow_html=True)
@@ -119,7 +119,7 @@ def history():
                 st.form_submit_button(":green[Send]")
 
         with col2:                                       
-            with open('send.svg', 'r') as f:
+            with open('Chattify-main/send.svg', 'r') as f:
                 svg_icon = f.read()
             st.markdown(svg_icon.replace('<svg', '<svg width="30" height="30"'), unsafe_allow_html=True)
 
@@ -127,7 +127,7 @@ def history():
                 st.form_submit_button(":orange[Chat History]")
 
         with col4:
-            with open('chat-text.svg', 'r') as f:
+            with open('Chattify-main/chat-text.svg', 'r') as f:
                 svg_icon = f.read()
             st.markdown(svg_icon.replace('<svg', '<svg width="32" height="32"'), unsafe_allow_html=True)
 
