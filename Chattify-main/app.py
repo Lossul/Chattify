@@ -240,7 +240,7 @@ def main():
         st.title(f"Welcome, {st.session_state.username}!")
         left_co, cent_co, last_co = st.columns(3)
         with cent_co:
-            st.image("CHATTIFY.jpg", width=250)
+            st.image("Chattify-main/CHATTIFY.jpg", width=250)
         st.title(":orange[LangChain] Chatbot with :green[Streamlit]")
         history()
         footer = """<style>.footer {position: fixed;left: 0;bottom: 0;width: 100%;background-color: #000;color: white;text-align: center;}
