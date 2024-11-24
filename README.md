@@ -16,3 +16,16 @@ Ask questions, seek advice, or explore topics of interest across various domains
 ### 4. **Chat History**
 Automatically saves chat sessions for future reference.
 View or delete past conversations as needed.
+
+## Requirements
+
+To run **Chattify**, ensure you have the following installed:
+
+1. **Python 3.9 or later**
+   - Download the latest Python version from [python.org.](https://www.python.org/)
+
+2. **pip (Python package manager)**
+
+3. **Git (to clone the repository)**
+
+
